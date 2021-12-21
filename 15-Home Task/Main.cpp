@@ -12,14 +12,14 @@ int main()
     setlocale(LC_ALL, "");
 
 
-    Chat c;
+    Chat chat;
 
-    c.reg((char*)"Client1", (char*)"987654", sizeof("987654"));
-    c.reg((char*)"Client2", (char*)"alex-123456", sizeof("alex-123456"));
+    chat.reg((char*)"Client1", (char*)"987654", sizeof("987654"));
+    chat.reg((char*)"Client2", (char*)"alex-123456", sizeof("alex-123456"));
 
 
-    c.login((char*)"Client1", (char*)"987654", sizeof("987654"));
-    c.login((char*)"Client2", (char*)"alex-123456", sizeof("alex-123456"));
+    chat.login((char*)"Client1", (char*)"987654", sizeof("987654"));
+    chat.login((char*)"Client2", (char*)"alex-123456", sizeof("alex-123456"));
 
     return 0;
 }
