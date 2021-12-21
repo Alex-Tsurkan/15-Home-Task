@@ -2,7 +2,8 @@
 #include "iostream"
 #include "string.h"
 
-Chat::Chat() {
+Chat::Chat() 
+{
     Auth_count = 0;
     mem_size = 8;
     array = new AuthData[mem_size];
@@ -11,13 +12,14 @@ Chat::Chat() {
 
 
 
-Chat::~Chat() {
+Chat::~Chat() 
+{
     delete[] array;
 }
 
 
 
-// ф-ция регистрации нового пользователя
+// ф-ция добавления/регистрации нового пользователя
 void Chat::reg(char _login[LOGINLENGTH], char _pass[], int pass_length) 
 {
     uint* hash = sha1(_pass, pass_length);

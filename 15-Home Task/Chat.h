@@ -29,7 +29,8 @@ private:
         AuthData() :
             login(""),
             pass_sha1_hash(0),
-            status(AuthDataStatus::free) {
+            status(AuthDataStatus::free) 
+        {
         }
         ~AuthData() {
             if (pass_sha1_hash != 0)

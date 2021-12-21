@@ -14,12 +14,12 @@ int main()
 
     Chat c;
 
-    c.reg((char*)"Client1", (char*)"qwerty12345", sizeof("qwerty12345"));
-    c.reg((char*)"Client2", (char*)"asdfg", sizeof("asdfg"));
+    c.reg((char*)"Client1", (char*)"987654", sizeof("987654"));
+    c.reg((char*)"Client2", (char*)"alex-123456", sizeof("alex-123456"));
 
 
-    c.login((char*)"Client1", (char*)"qwerty12345", sizeof("qwerty12345"));
-    c.login((char*)"Client2", (char*)"asdfg", sizeof("asdfg"));
+    c.login((char*)"Client1", (char*)"987654", sizeof("987654"));
+    c.login((char*)"Client2", (char*)"alex-123456", sizeof("alex-123456"));
 
     return 0;
 }
